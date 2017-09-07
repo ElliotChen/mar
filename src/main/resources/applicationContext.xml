@@ -16,7 +16,7 @@
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="poolName" value="springHikariCP" />
 		<property name="connectionTestQuery" value="SELECT 1" />
-		<!--<property name="driverClassName" value="${jdbc.driverClass}" />-->
+		<property name="driverClassName" value="${jdbc.driverClass}" />
 		<property name="jdbcUrl" value="${jdbc.url}" />
 		<property name="username" value="${jdbc.user}" />
 		<property name="password" value="${jdbc.password}" />
